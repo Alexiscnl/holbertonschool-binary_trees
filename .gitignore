@@ -1,0 +1,22 @@
+# Ignorer les fichiers de compilation (généralement générés par gcc)
+*.o
+*.a
+*.out
+*.exe
+*main.c
+a.out
+binary_tree_print.c
+0-node
+# Ignorer les fichiers de configuration spécifiques à l'IDE
+.vscode/
+.idea
+
+# Ignorer les fichiers de logs
+*.log
+
+# Ignorer les fichiers temporaires de l'éditeur
+*~
+*.swp
+
+# Ignorer le dossier de build (si tu utilises un dossier spécifique pour les fichiers compilés)
+buil
