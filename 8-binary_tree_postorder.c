@@ -2,14 +2,14 @@
 #include <stdio.h>
 #include "binary_trees.h"
 /**
- * binary_tree_inorder - Traverses a binary tree using in-order traversal.
+ * binary_tree_postorder - Traverses a binary tree using post-order traversal.
  * @tree: A pointer to the root node of the tree to traverse.
  * @func: A pointer to a function to call for each node. The value in the node
  *        must be passed as a parameter to this function.
  *
- * Description: This function performs an in-order traversal of a binary tree.
- * It first traverses the left subtree, then processes the current node, and
- * finally traverses the right subtree.
+ * Description: This function performs a post-order traversal of a binary tree.
+ * It first traverses the left subtree, then the right subtree, and finally
+ * processes the current node.
  */
 void binary_tree_postorder(const binary_tree_t *tree, void (*func)(int))
 {
