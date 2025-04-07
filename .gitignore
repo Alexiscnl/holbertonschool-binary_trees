@@ -1,26 +1,24 @@
-# Ignorer les fichiers de compilation (généralement générés par gcc)
+# Ignorer le dossier test
+test/
+
+
+# Ignorer les fichiers compilés (exécutables)
+a.out
 *.o
-*.a
 *.out
 *.exe
-*main.c
-a.out
+
+# Ignorer tous les fichiers sans extension (considérés comme exécutables)
+[^.]*
+
+
+
+# Autoriser les fichiers source et README
+!*.c
+!*.h
+!README.md
+# Ignorer uniquement la fonction print (non autorisée dans le repo)
 binary_tree_print.c
-0-node
-1-left
-2-right
-3-del
-4-leaf
-# Ignorer les fichiers de configuration spécifiques à l'IDE
-.vscode/
-.idea
 
-# Ignorer les fichiers de logs
-*.log
-
-# Ignorer les fichiers temporaires de l'éditeur
-*~
-*.swp
-
-# Ignorer le dossier de build (si tu utilises un dossier spécifique pour les fichiers compilés)
-buil
+# Ne pas ignorer les dossiers (pour permettre le suivi des fichiers dans les dossiers)
+!*/
