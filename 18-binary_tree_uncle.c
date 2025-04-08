@@ -8,10 +8,14 @@
  * Return: A pointer to the uncle node, or NULL if the node has no uncle,
  *         or if the node, parent, or grandparent is NULL.
  *
- * Description: This function checks if the node, its parent, and its grandparent
- *              are valid. If the grandparent is present, it checks if the parent
- *              is the left child of the grandparent. If so, it returns the right
- *              child of the grandparent as the uncle; otherwise, it returns the
+ * Description: This function checks if the node, its parent, and its
+ *grandparent
+ *              are valid. If the grandparent is present, it checks if the
+ *parent
+ *              is the left child of the grandparent. If so, it returns the
+ *right
+ *              child of the grandparent as the uncle; otherwise, it returns
+ *the
  *              left child of the grandparent.
  */
 binary_tree_t *binary_tree_uncle(binary_tree_t *node)
